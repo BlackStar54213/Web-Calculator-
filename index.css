@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    font-family: monospace;
+}
+main{
+    background-color: hsl(185, 41%, 84%);
+    height: 100%;
+    width: 70%;
+    margin: auto;
+    margin-top: 1%;
+    position: fixed;
+    margin-right: 18%;
+    margin-left: 18%;
+}
+.logo{
+    text-align: center;
+    margin-top: 5.7rem;
+    margin-bottom: 2.3rem;
+}
+
+.container{
+    background-color: white;
+    height: 50%;
+    width: 60%;
+    margin-left: 200px;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.inputs, .displays{
+    display: inline-block;
+}
+.displays{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    float: right;
+    margin-top: 25px;
+    margin-right: 20px;
+    height: 85%;
+    border-radius: 10px;
+    width: 50%;
+}
+.displays button{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 100px;
+    margin-left: 15px;
+    background-color: hsl(189, 41%, 97%);
+    font-size: 16px;
+    font-weight: 600;
+    
+    }
+
+    .displays h2{
+        margin-top: 30px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-family: Verdana, Tahoma, sans-serif;
+        font-weight: 900;
+
+    } .displays p{
+        margin-top: 5px;
+        margin-left: 10px;
+        font-size: 16px;
+        color: rgb(175, 175, 175);
+    }
+
+    .text, .results{
+        display: inline-block;
+    }
+
+.results{
+    display: inline;
+    float: right;
+    font-size: 35px;
+    margin-top: 10px;
+    color: hsl(172, 67%, 45%);
+}
+.results h3{
+    padding: 10px;
+}
+
+.inputs{
+    
+    background-color: white;
+    color: black;
+    float: left;
+    margin-top: 45px;
+    margin-left: 15px;
+    height: 80%;
+    border-radius: 10px;
+    width: 40%;
+    font-size: xx-small;
+    color: hsl(183, 100%, 15%);
+}
+.price{
+    padding: 8px;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+}
+.tips{
+    margin-top: 40px;
+}
+.tipsbtn{
+    margin-top: 10px;
+}
+.tipsbtn button{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 80px;
+    margin: 3px;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#custom{
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 25px;
+    border: none;
+}
+#custominput{
+    border: none;
+    width: 68px;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    font-family: monospace;
+}
+#custom::after{
+    background-color: white;
+}
+
+#error{
+    color: red;
+    text-align: right;
+    margin-top: -15px;
+    visibility: hidden;
+}
+button a{
+    text-decoration: none;
+    color: hsl(183, 100%, 15%);
+}
+#pricetag, #customer{
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-weight: 800;
+    font-size: 14px;
+    cursor: pointer;
+    padding: auto;
+}
+#pricetag:active{
+    border: 2px solid hsl(183, 100%, 15%);
+}
+.tipsbtn button:active{
+    background-color: hsl(172, 67%, 45%);
+}
+button:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;}
+    .attribution{
+        font-size: 16px;
+        text-decoration: none;  
+        color: white;
+        margin-top: 100%; 
+        margin-left: 20px;
+        font-size: 18px; 
+        color: rgb(7, 141, 141);
+    }
+
+
+    .attribution a{
+        margin-top: 400px;
+        color: white;
+        
+    }
+
+
+    @media screen and (max-width:450px){
+        main{
+            margin: 0%  ;
+            width: 100%;
+            position: relative;
+            padding-top: 20px;
+        }
+        .container{
+            margin: 0%;
+            width: 100%;
+            height: 100%;
+            display: grid;
+        }
+        .inputs, .displays{
+            width: 100% ;
+            font-size: 14px;
+            border-radius: 20px;
+        }
+        .inputs button{
+            font-size: xx-large;
+            width: 42%;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            height: 50px;
+        }
+        #pricetag, #customer{
+            font-size: 40px;
+            height: 30px;
+            
+        }
+        .container{
+            height: 600px;
+        }
+        #custominput
+        {
+           font-size: x-large;
+           padding-left: 40px;
+           padding-right: 40px;
+           border: none;
+        }
+        .logo{
+            margin-top: 50px;
+        }
+        .displays{
+            height: 400px;
+        }
+        .displays button{
+            margin-top: 20px;
+            padding: 20px;
+            background-color: hsl(172, 67%, 45%);
+        }
+        .attribution{
+            font-size: 16px;
+            text-decoration: none;  
+            color: white;
+            margin-top: 40%; 
+            margin-left: 20px;
+            font-size: 18px; 
+            color: rgb(7, 141, 141);
+        }
+        .attribution a {
+            margin-top: 400px;
+            color: white;
+        }
+    }

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+
+  <main>
+    <div class="logo">
+      <img src="images/logo.svg" alt="business logo">
+    </div>
+
+    <div class="container">
+      <div class="inputs">
+        <h1>Bill</h1>
+        <input type="money" class="price" id="pricetag" >
+        <div class="tips">
+          <h2>Select Tip %</h2>
+          <div class="tipsbtn">
+            <button type="button" onclick="findAns1();" id="pay" value="5">5%</button>
+            <button type="button" onclick="findAns2();" id="pays" value="10">10%</button>
+            <button type="button" onclick="findAns3();" id="payss" value="15">15%</button>
+            <button type="button" onclick="findAns4();" id="paysss" value="25">25%</button>
+            <button type="button" onclick="findAns5();" id="payssss" value="50">50%</button>
+            <button id="custom"><input type="number" placeholder="Custom" id="custominput" oninput="customInput()"></button>
+            </div>
+        <h2>No. of People</h1> <h2 id="error">Can't be zero</h1>
+        <input   type="money" class="price" id="customer">
+          
+        </div>
+      </div>
+      <div class="displays"> 
+        <div class="text"><h2>Tip Amount</h2>
+          <p>/ person</p>
+          <h2>Total</h2>
+          <p>/ person</p>
+        </div>
+
+        <div class="results">
+          <h3 id="totally">$ 00.00</h3>
+          <h3 id="total">$ 00.00</h3>
+        </div>
+        
+        <a href="" id="reset"><button type="reset"> RESET</button></a> 
+      </div>
+    </div>  
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" >Frontend Mentor</a>. 
+    Coded by <a href="#">Desmond Izu</a>.
+    </div><script src="index.js"></script>
+  </main>
+
+  
+</body>
+</html>
